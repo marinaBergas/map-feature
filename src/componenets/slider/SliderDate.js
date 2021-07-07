@@ -8,9 +8,8 @@ const SliderDate = ({match}) => {
  
     const fetchData = async() =>{
         try {
-        const res = await fetch("http://www.scholarhood.ca/dev-test.json") ;
+        const res = await fetch("https://www.scholarhood.ca/dev-test.json") ;
         const data = await res.json();
-        console.log("dd",data)
             if(data){
               setCurrentschools(data)
             }

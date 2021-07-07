@@ -79,7 +79,18 @@ const Slider = ({ data }) => {
       const nextPage = getNextPageData(data, newPageNumber, 3);
       setPageData(nextPage);
       setPageNumber(newPageNumber);
+      if (isDesktopOrLaptop) {
+      const currentPageData = getNextPageData(data, newPageNumber, 3);
+      setPageData(currentPageData);
+    } else if (isTabletOrMobile) {
+      const currentPageData = getNextPageData(data, newPageNumber, 2);
+      setPageData(currentPageData);
+    } else if (isSmall) {
+      const currentPageData = getNextPageData(data, newPageNumber, 1);
+      setPageData(currentPageData);
     }
+    }
+    
   };
 
   if (!Array.isArray(data) || data.length <= 0) {
@@ -95,7 +106,18 @@ const Slider = ({ data }) => {
       const prevPage = getPrevPageData(data, newPageNumber, 3);
       setPageData(prevPage);
       setPageNumber(newPageNumber);
+      if (isDesktopOrLaptop) {
+      const currentPageData = getNextPageData(data, newPageNumber, 3);
+      setPageData(currentPageData);
+    } else if (isTabletOrMobile) {
+      const currentPageData = getNextPageData(data, newPageNumber, 2);
+      setPageData(currentPageData);
+    } else if (isSmall) {
+      const currentPageData = getNextPageData(data, newPageNumber, 1);
+      setPageData(currentPageData);
     }
+    }
+   
   };
 
 

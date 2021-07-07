@@ -19,7 +19,7 @@ school and the url should be the dasherized school name.
 
 In the project directory, you can run:
 
-
+### `npm install`
 ### `npm start`
 
 Runs the app in the development mode.\
