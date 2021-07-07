@@ -1,0 +1,68 @@
+.App__schoolSection__card-container{
+    position: relative;
+}
+
+.App__schoolSection__card-container__card-row__card-col{
+    
+    justify-content: center;
+    align-items: center;
+}
+.App__schoolSection__card-container__card-row__card-col__card__map-container{
+
+    border-radius: 10px;
+}
+.mapboxgl-ctrl-attrib-button{
+    display: none !important;
+}
+.mapboxgl-ctrl-attrib-inner{
+    display: none !important;
+}
+.App__schoolSection__card-container__right-arrow{
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(50%,-50%);
+    font-size: 2rem;
+    color: rgb(228, 126, 89);
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+.App__schoolSection__card-container__left-arrow{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    bottom:50%;
+    right: 100%;
+    font-size: 2rem;
+    color: rgb(228, 126, 89);
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+.App__schoolSection__card-container__card-row__card-col__card__card-body{
+    position: relative;
+    text-align: left;
+    height: 180px;
+}
+
+.App__schoolSection__card-container__card-row__card-col__card {
+margin: 4%;
+}
+.mapboxgl-canvas{
+    width: 100% !important;
+    height: 180px !important;
+}
+.App__schoolSection__card-container__card-row__card-col__card__card-body__card-text-street{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+   
+}
+.App__schoolSection__card-container__card-row__card-col__card__card-body__card-text__card-line{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 90%;
+   
+}
+

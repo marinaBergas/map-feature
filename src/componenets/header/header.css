@@ -1,0 +1,14 @@
+.App__header__header-container__header-row__header-col__header-paragraph-container__header-paragraph{
+    width: 50%;
+ 
+}
+@media (max-width: 575.98px) {
+    .App__header__header-container__header-row__header-col__header-title{
+     
+        font-size:1.2rem !important;
+        font-weight: 400;
+    }
+    .App__header__header-container__header-row__header-col__header-paragraph-container__header-paragraph{
+        font-size:0.7rem !important;
+    }
+}
